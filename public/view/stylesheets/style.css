@@ -1,0 +1,237 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+@media (orientation: landscape) {
+    #intro{
+        min-height: 100vh;
+        background: rgb(59,86,166);
+        background: linear-gradient(139deg, rgba(59,86,166,1) 0%, rgba(169,60,81,1) 29%, rgba(59,86,166,1) 64%);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .profile{
+        margin-top: 30vh;
+        height: 70vh;
+    }
+    .triangle
+    {
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 5vw solid rgba(136, 136, 136, 0.747);
+        border-left: 5vw solid transparent;
+        margin: 0%;
+    }
+}
+@media (orientation: portrait) {
+    #intro{
+        min-height: 100vh;
+        background: rgb(59,86,166);
+        background: linear-gradient(139deg, rgba(59,86,166,1) 0%, rgba(169,60,81,1) 29%, rgba(59,86,166,1) 64%);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .profile{
+        display: none;
+    }
+    .triangle
+    {
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 20vw solid rgba(136, 136, 136, 0.747);
+        border-left: 20vw solid transparent;
+        margin: 0%;
+    }
+}
+
+#floatingmenu{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+}
+
+.floatingwarning{
+    position: fixed;
+    padding: 2%;
+    bottom: 10%;
+    left: 10%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: white;
+    font-size: 2em;
+    width: 40%;
+}
+
+#intro p{
+    line-height: 1.5;
+}
+.jumpto{
+  font-weight: bold;
+  /*background-color: rgba(255, 255, 255, 0.171);
+  border: 1px solid #4d4d4d;
+  border-radius: 10px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  */
+  box-sizing: border-box;
+  color: #fdfdfd;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat",sans-serif;
+  font-size: 100%;
+  margin: 4 px;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.jumpto:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+.jumpto img{
+    width: 3vw;
+}
+#intro h1{
+    font-size: 230%;
+    padding-top:  15%;
+    padding-bottom: 2%;
+}
+#intro_text{
+    font-size: 120%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+}
+#education .white_text{
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+.white_text{
+    font-family: 'Mulish', sans-serif;
+    padding: 4% 2% 4% 2%;
+    font-size: 120%;
+}
+#certification .white_text{
+    padding: 10% 5% 10% 5%;
+}
+.white_text h2{
+    font-size: 400%;
+}
+#experience{
+    background: rgb(125,59,166);
+    background: linear-gradient(30deg, rgba(125,59,166,1) 0%, rgba(59,86,166,1) 43%, rgba(125,59,166,1) 100%);
+    color: white;
+}
+.colour_head{
+    text-align: center;
+    padding: 10% 0% 1% 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 370%;
+}
+#skills p{
+    text-align: center;
+    padding: 3% 0% 3% 0%;
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+}
+#exp_text{
+    padding: 3% 20% 3% 20%;
+    line-height: 2;
+    font-weight: 600;
+    font-family: 'Montserrat', serif;
+}
+.binner{
+    color: rgb(0, 0, 0);
+    padding: 6% 3% 6% 3%;
+    font-size: 110%;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3%;
+    margin: 3%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.288);
+}
+#skills{
+    background: rgb(59,156,166);
+    background: linear-gradient(30deg, rgba(59,156,166,1) 0%, rgba(59,86,166,1) 61%, rgba(59,156,166,1) 100%);
+    color: rgb(255, 255, 255);
+}
+.skillico{
+    width: 100%;
+    padding: 20%;
+}
+#minorskills{
+    padding: 0% auto;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+.smallcont{
+    display: inline-block;
+    margin: 1%;
+    padding: 2%;
+    color: rgb(0, 0, 0);
+    font-size: 130%;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0.459);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.432);
+}
+.smallhead{
+    padding-top: 4% !important;
+}
+.languages .binner{
+    padding: 8% 20% 8% 20%;
+}
+#projects{
+    text-align: center;
+}
+.project{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 1%;
+}
+.project h1{
+    padding: 3% 0% 3% 0%;
+    font-size: 350%;
+}
+.imgproject{
+    width: 100%;
+    padding-bottom: 5%;
+}
+.projecttext{
+    font-size: 100%;
+    text-align:justify;
+}
+.totop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    padding: 0%;
+    opacity: 10%;
+}
+.triangle:hover .totop{
+    opacity: 100%;
+}
+.date{
+    font-style: italic;
+    float: right;
+    font-size: 80%;
+}
+
+/*
+    Previous commit was failed
+    adding this line to try again
+
+    Failed commit trying
+*/

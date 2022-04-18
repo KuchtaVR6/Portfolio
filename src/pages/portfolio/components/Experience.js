@@ -1,35 +1,36 @@
 import {Splide, SplideSlide} from "@splidejs/react-splide";
 import Job from "./Job";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
-const Experience = () => {
+const Experience = ({width}) => {
 
-    const [pages, setPages] = useState(Math.floor(window.innerWidth / 700) + 1)
+    const [pages, setPages] = useState(Math.floor(width / 900) + 1)
+    const [start, setStart] = useState(Math.floor((pages-1)/2))
 
-    const resize = () => {
-        let calc = Math.floor(window.innerWidth / 700) + 1;
-        if (pages !== calc) {
-            setPages(calc);
-        }
-    }
-
-    window.addEventListener('resize', resize);
+    useEffect(()=>{
+        setPages(Math.floor(width / 700) + 1)
+        setStart(Math.floor((pages-1)/2))
+    },[width])
 
     return (
         <div className={"fullpage experience dark gallery"} id={"experience"}>
             <p data-aos={"fade-right"}>
                 <br/>
-                I am only 20 years old, but I have already worked in 4 different companies. This of course gave me
-                a lot of insight into how companies work, both those big and startups. My early jobs centred around
-                hospitality and retail, which gave me knowledge about problems that could be solved using IT in those
-                areas. Lately, I'm mostly involved in positions about teaching and supporting students, which are
-                stimulating my skills that are important in IT workplaces, for example, the ability to explain concepts
-                to a 'non-IT' crowd, and leading a team.
+                    <b>My work experience</b> started when I was 16 years old, starting with hospitality and retail-based
+                    positions. Although they are not the most relevant to my career path, I still believe there I had
+                    learned plenty from them in regards to depending on each other, reliability and teamwork. Since last
+                    year I have been moving more toward the education industry. I have experience working as a tutor in
+                    a significant number of companies. Furthermore, I'm working as a Laboratory Demonstrator for Queen
+                    Mary University in London. This position involves assisting, teaching and marking students, which is
+                    a great opportunity to broaden my IT knowledge and improve my interpersonal skills.
             </p>
             <Splide
                 options={{
                     rewind: true,
-                    perPage: pages
+                    type: 'loop',
+                    perPage: pages,
+                    focus: 'center',
+                    start: start
                 }}
             >
                 <SplideSlide>
@@ -113,7 +114,7 @@ const Experience = () => {
 
             </Splide>
         </div>
-    )
+)
 }
 
 export default Experience;
