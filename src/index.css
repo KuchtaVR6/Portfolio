@@ -330,3 +330,30 @@ footer a{
 footer a:hover{
     color: var(--myContrasting);
 }
+
+.notfound{
+    display: flex;
+    font-size: 3em;
+    text-align: center;
+    color: var(--myContrasting);
+}
+
+.notfound .container{
+    margin: auto auto;
+}
+
+.notfound h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.notfound i{
+    font-size: 0.5em;
+}
+
+.notfound a{
+    background-color: white;
+    color: black;
+    padding: 0.3em;
+    font-weight: bold;
+}

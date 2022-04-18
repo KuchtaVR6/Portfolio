@@ -72,7 +72,7 @@ const Projects = () => {
                         title={"My private tutoring website"}
                         text={ "This website was designed with accessibility and interactivity in mind. I created the front-end using the React library to make the client-side dynamic and eye-pleasing. In addition to stunning animations, the website has a \"contact me\" button that automatically sends two emails. Implementing this functionality has given me confidence in setting up DNS records and email certifications. Furthermore, I have gained knowledge in Security Engineering by researching and patching potential exploits in the systems."}
                         tech={["REACT.JS", "HTML", "JAVASCRIPT", "CSS", "BOOTSTRAP"]}
-                        access={"tutor"}
+                        access={"tutor.html"}
                         github={"https://github.com/KuchtaVR6/Portfolio"}
                     />
                 </SplideSlide>

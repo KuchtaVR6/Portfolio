@@ -55,7 +55,12 @@ function useOnScreen(ref, rootMargin = "0px") {
             observer.observe(ref.current);
         }
         return () => {
-            observer.unobserve(ref.current);
+            try{
+                observer.unobserve(ref.current);
+            }
+            catch (e) {
+                window.location = "";
+            }
         };
     }, []); // Empty array ensures that effect is only run on mount and unmount
     return isIntersecting;

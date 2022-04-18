@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Knowledge from "./components/Knowledge";
 import Footer from "./components/Footer";
 import {useState} from "react";
+import '../../index.css';
 
 const Portfolio = () => {
     const [width, setWidth] = useState(1920);

@@ -24,7 +24,7 @@ const Intro = () => {
                             <a href={"#projects"}>Projects</a>
                             <a href={"#experience"}>Experience</a>
                             <a href={"#knowledge"}>Knowledge</a>
-                            <Link to={"tutor"}>Tutoring</Link>
+                            <Link to={"tutor.html"}>Tutoring</Link>
                         </div>
                         <div className={"contact"}>
                             <a href={"mailto: patrick@kuchta.uk"}>patrick@kuchta.uk</a>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;
