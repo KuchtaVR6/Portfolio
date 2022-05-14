@@ -1,8 +1,8 @@
 @media screen and (prefers-reduced-motion: no-preference) {
     html {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-  }
+}
 @media (orientation: landscape) {
     #intro{
         min-height: 100vh;
@@ -26,6 +26,17 @@
         border-bottom: 5vw solid rgba(136, 136, 136, 0.747);
         border-left: 5vw solid transparent;
         margin: 0%;
+    }
+    .floatingwarning{
+        position: fixed;
+        padding: 2%;
+        bottom: 10%;
+        left: 10%;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.68);
+        color: white;
+        font-size: 1.5em;
+        width: 40%;
     }
 }
 @media (orientation: portrait) {
@@ -51,6 +62,17 @@
         border-left: 20vw solid transparent;
         margin: 0%;
     }
+    .floatingwarning{
+        position: fixed;
+        padding: 1%;
+        bottom: 2%;
+        left: 2%;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.68);
+        color: white;
+        font-size: 1.125em;
+        width: 60%;
+    }
 }
 
 #floatingmenu{
@@ -60,44 +82,32 @@
     right: 0;
 }
 
-.floatingwarning{
-    position: fixed;
-    padding: 2%;
-    bottom: 10%;
-    left: 10%;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.68);
-    color: white;
-    font-size: 2em;
-    width: 40%;
-}
-
 #intro p{
     line-height: 1.5;
 }
 .jumpto{
-  font-weight: bold;
-  /*background-color: rgba(255, 255, 255, 0.171);
-  border: 1px solid #4d4d4d;
-  border-radius: 10px;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  */
-  box-sizing: border-box;
-  color: #fdfdfd;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Montserrat",sans-serif;
-  font-size: 100%;
-  margin: 4 px;
-  padding: 5px;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: bold;
+    font-weight: bold;
+    /*background-color: rgba(255, 255, 255, 0.171);
+    border: 1px solid #4d4d4d;
+    border-radius: 10px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    */
+    box-sizing: border-box;
+    color: #fdfdfd;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 100%;
+    margin: 4 px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
 }
 .jumpto:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
 }
 .jumpto img{
     width: 3vw;
@@ -228,10 +238,3 @@
     float: right;
     font-size: 80%;
 }
-
-/*
-    Previous commit was failed
-    adding this line to try again
-
-    Failed commit trying
-*/

@@ -17,7 +17,7 @@ const Knowledge = () => {
                     />
                     <Job
                         title={"Advanced IT, Maths and Physics"}
-                        company={"Zamoyski High school"}
+                        company={"Zamoyski High School"}
                         city={"Warsaw"}
                         country={"Poland"}
                         startDate={"September 2017"}

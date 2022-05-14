@@ -13,7 +13,7 @@ const Projects = () => {
             >
                 <SplideSlide>
                     <Project path={"cryptogram.png"} title={"Cryptocurrency wallet prototype"}
-                             text={"This is one of my academic projects, the prototype that you can see in the figure was created from the ground up starting with the domain analysis for our idea. We have worked as a group of 6, where I have taken the position of a manager assigning tasks, keeping track of deadlines and checking the quality of work of others. There were lots of interesting challenges creating the prototype itself, like learning how to create a RestAPI, but the biggest challenge was effective teamwork, in which I believe we have succeeded, having all of our group contributing a significant work and having only minor problems with code integration. "}
+                             text={"This is one of my academic projects, the prototype that you can see in the figure was created from the ground up starting with the domain analysis for our idea. We have worked as a group of 6, where I have taken the position of a manager assigning tasks, keeping track of deadlines and checking the quality of work of others. There were lots of interesting challenges creating the prototype itself, like learning how to create a RestAPI, but the biggest challenge was effective teamwork, in which I believe we have succeeded, having all of our group contributing a significant work and having only minor problems with code integration. This project has won the best project award."}
                              tech={["TYPESCRIPT", "REACT.JS", "HTML", "CSS", "EXPRESS.JS", "JAVASCRIPT"]}
                              github={"https://github.com/KuchtaVR6/CryptoGramProject"}
                     />
@@ -24,6 +24,7 @@ const Projects = () => {
                              text={"This is also one of my academic projects, where the goal was to create a fully functional weather application with one stakeholder in mind, we have chosen to create an application tailored for photographers. While developing this application I have learned about creating a very usable and minimalistic User Interface, along with working with APIs. Furthermore, I have gained experience working in a team, where I also became the manager of the project.  "}
                              tech={["REACT.JS", "HTML", "JAVASCRIPT", "CSS"]}
                              github={"https://github.com/KuchtaVR6/PhotoCa.st"}
+                             access={"photocast.html"}
                     />
                 </SplideSlide>
 
@@ -41,7 +42,7 @@ const Projects = () => {
                              text={"This website was created as a challenge to myself to create an eye-pleasing and portable website with limited time. I decided to make it purely using HTML and CSS, and for the portability, I have used Bootstrap CSS. The resulting product is an informative, simple and good looking portfolio, which I was quite happy with. Throughout this academic year, I have gained more confidence in using React, I have decided to remake my portfolio this time with a more interesting and responsive design in mind, whilst maintaining the readability of the older version."}
                              tech={["HTML", "CSS", "BOOTSTRAP"]}
                              github={"https://github.com/KuchtaVR6/porfolio2021"}
-                             access={"view/index.html"}
+                             access={"portfolio/view/index.html"}
                     />
                 </SplideSlide>
 
@@ -71,7 +72,7 @@ const Projects = () => {
                         path={"tutor.png"}
                         title={"My private tutoring website"}
                         text={ "This website was designed with accessibility and interactivity in mind. I created the front-end using the React library to make the client-side dynamic and eye-pleasing. In addition to stunning animations, the website has a \"contact me\" button that automatically sends two emails. Implementing this functionality has given me confidence in setting up DNS records and email certifications. Furthermore, I have gained knowledge in Security Engineering by researching and patching potential exploits in the systems."}
-                        tech={["REACT.JS", "HTML", "JAVASCRIPT", "CSS", "BOOTSTRAP"]}
+                        tech={["REACT.JS", "HTML", "JAVASCRIPT","PHP", "CSS", "BOOTSTRAP"]}
                         access={"tutor.html"}
                         github={"https://github.com/KuchtaVR6/Portfolio"}
                     />

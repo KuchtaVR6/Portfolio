@@ -7,7 +7,7 @@ import {useState} from "react";
 import '../../index.css';
 
 const Portfolio = () => {
-    const [width, setWidth] = useState(1920);
+    const [width, setWidth] = useState(window.innerWidth);
 
     window.addEventListener('resize', () => {
         setWidth(window.innerWidth)

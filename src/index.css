@@ -24,18 +24,6 @@ body {
         font-size: 0.8em;
     }
 
-    .intro .picContainer {
-        height: 40vh;
-        max-width: 100%;
-    }
-
-    .intro .largePic {
-        position: absolute;
-        bottom: 0;
-        left: 15%;
-        width: 70%;
-    }
-
     .gallery {
         padding: 1em;
     }
@@ -58,30 +46,40 @@ body {
         margin: 0 1em 0 0;
     }
     footer{
-        padding: 2em 2em 5em;
+        padding: 2em 2em 2.45em;
+        line-height: 2em;
+    }
+}
+
+@media (orientation: landscape)
+{
+    .intro .picContainer {
+        display: flex;
+        float: right;
+        height: 85vh;
+        max-width: 40%;
+    }
+}
+
+@media (orientation: portrait)
+{
+    .intro .picContainer {
+        display: flex;
+        float: right;
+        min-height: 50vh;
+        height: max-content;
+        max-width: 80%;
     }
 }
 
 @media (min-width: 768px) {
-    .intro .picContainer {
-        height: 85vh;
-        max-width: 100%;
-    }
-
-    .intro .largePic {
-        position: absolute;
-        bottom: 0;
-        left: -20%;
-        max-height: 100%;
-        max-width: 120%;
-    }
 
     .gallery {
         padding: 3% 4% 1% 4%;
     }
 
     .intro .mainText {
-        margin: 2em 5em;
+        margin: 2em 0em 2em 5em;
     }
 
     .intro .mainText .big {
@@ -106,6 +104,8 @@ code {
 .fullpage {
     width: 100%;
     min-height: 100vh;
+    overflow-y: clip;
+    overflow-x: clip;
 }
 
 .dark {
@@ -117,6 +117,17 @@ code {
 .light {
     color: var(--myBlack);
     background-color: var(--myWhite);
+}
+
+.intro .largePic {
+    margin: auto auto 0 auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+.intro .textContainer{
+    float: left;
+    width: fit-content;
 }
 
 .intro .links {
@@ -177,6 +188,19 @@ code {
 
 .project .picture {
     width: 100%;
+}
+
+.project .icon{
+    width: 200px;
+    display: flex;
+    font-size: 1.5em;
+    text-align: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.project .icon svg{
+    margin: 0 auto;
 }
 
 .project h1 {

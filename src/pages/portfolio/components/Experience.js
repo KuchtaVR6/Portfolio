@@ -5,11 +5,9 @@ import {useEffect, useState} from "react";
 const Experience = ({width}) => {
 
     const [pages, setPages] = useState(Math.floor(width / 900) + 1)
-    const [start, setStart] = useState(Math.floor((pages-1)/2))
 
     useEffect(()=>{
         setPages(Math.floor(width / 700) + 1)
-        setStart(Math.floor((pages-1)/2))
     },[width])
 
     return (
@@ -27,10 +25,9 @@ const Experience = ({width}) => {
             <Splide
                 options={{
                     rewind: true,
-                    type: 'loop',
                     perPage: pages,
                     focus: 'center',
-                    start: start
+                    start: 0
                 }}
             >
                 <SplideSlide>

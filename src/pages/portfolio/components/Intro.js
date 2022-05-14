@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom";
-
 const Intro = () => {
 
     const greeting = () => {
@@ -20,11 +18,11 @@ const Intro = () => {
                 <div className={"row init"}>
                     <div className={"col-md-12 links"} data-aos={"zoom-in-down"} data-aos-duration={"1000"}>
                         <div className={"oneRow"}>
-                            <img src={"logo.svg"} alt={"logo saying Kuchta"} className={"logo"}/>
+                            <img src={"portfolio/logo.svg"} alt={"logo saying Kuchta"} className={"logo"}/>
                             <a href={"#projects"}>Projects</a>
                             <a href={"#experience"}>Experience</a>
                             <a href={"#knowledge"}>Knowledge</a>
-                            <Link to={"tutor.html"}>Tutoring</Link>
+                            <a href={"tutor.html"}>Tutoring</a>
                         </div>
                         <div className={"contact"}>
                             <a href={"mailto: patrick@kuchta.uk"}>patrick@kuchta.uk</a>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;
@@ -32,8 +30,8 @@ const Intro = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"row"}>
-                    <div className={"col-md-8 textContainer"}>
+                <div className={"mainContent"}>
+                    <div className={"textContainer"}>
                         <div className={"mainText"} data-aos={"fade-in"} data-aos-duration={"1000"}>
                             <div className={"big"}>
                                 <span style={{color: "#ff0000"}}>{greeting()}</span><br/> I'm <b>Patryk
@@ -43,8 +41,8 @@ const Intro = () => {
                         </div>
 
                     </div>
-                    <div className={"col-md-4 picContainer"}>
-                        <img src={"me.png"} alt={"me"} className={"largePic"}/>
+                    <div className={"picContainer"}>
+                            <img src={"portfolio/me.png"} alt={"me"} className={"largePic"}/>
                     </div>
                 </div>
             </div>

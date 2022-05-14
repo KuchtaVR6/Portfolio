@@ -1,9 +1,7 @@
-import {Link} from "react-router-dom";
-
 const Footer = () => {
     return (
         <footer className={"dark footer"}>
-            <Link to={"tutor.html"} data-aos={"zoom-in"}>Looking for an amazing tutor?</Link><br/>
+            <a href={"tutor.html"} data-aos={"zoom-in"}>Looking for an amazing tutor?</a><br/>
             Copyright &copy; Patryk Kuchta 2022
         </footer>
     )

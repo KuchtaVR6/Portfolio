@@ -8,7 +8,7 @@ const Project = ({path, title, text, tech, github, access}) => {
         <div className={"fullpage project dark"}>
                 <div className={"row"}>
                     <div className={"col-md-7"}>
-                        <img src={"projects/" + path} alt={title} className={"picture"} data-aos={"fade-in"}/>
+                        <img src={"portfolio/projects/" + path} alt={title} className={"picture"} data-aos={"fade-in"}/>
                         <h2 data-aos={"fade-right"}>Technologies Used:</h2>
                         <div className={"techContainer"}>
                             {tech.map((value) => {
@@ -23,8 +23,8 @@ const Project = ({path, title, text, tech, github, access}) => {
                         <p data-aos={"fade-left"}>
                             {text}
                         </p>
-                        {github? <a href={github} data-aos={"fade-left"}><FaGithubSquare size={75}></FaGithubSquare></a>:""}
-                        {access? <a href={access} data-aos={"fade-left"}><BiLinkExternal size={75}></BiLinkExternal></a>:""}
+                        {github? <a href={github} className={"icon"} data-aos={"fade-left"}>Github repository of the project<FaGithubSquare size={75}></FaGithubSquare></a>:""}
+                        {access? <a href={access} className={"icon"} data-aos={"fade-left"}>View and use the project here<BiLinkExternal size={75}></BiLinkExternal></a>:""}
                     </div>
                 </div>
         </div>
